@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario completo</title>
+  <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+
+  <form action="/formulario" method="post">
+
+    <fieldset>
+      <legend>Datos personales</legend>
+
+      <label for="nombre">Nombre:</label>
+      <input type="text" name="nombre" id="nombre" placeholder="Introduce tu nombre">
+
+      <label for="apellidos">Apellidos:</label>
+      <input type="text" name="apellidos" id="apellidos" placeholder="Introduce tus apellidos">
+
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" placeholder="Introduce tu email">
+
+      <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+      <input type="date" name="fecha_nacimiento" id="fecha_nacimiento">
+
+    </fieldset>
+
+    <fieldset>
+      <legend>Datos de contacto</legend>
+
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" name="telefono" id="telefono" placeholder="Introduce tu teléfono">
+
+      <label for="direccion">Dirección:</label>
+      <input type="text" name="direccion" id="direccion" placeholder="Introduce tu dirección">
+
+      <label for="ciudad">Ciudad:</label>
+      <input type="text" name="ciudad" id="ciudad" placeholder="Introduce tu ciudad">
+
+    </fieldset>
+
+    <fieldset>
+      <legend>Intereses</legend>
+
+      <input type="checkbox" name="intereses[]" value="cine"> Cine
+      <input type="checkbox" name="intereses[]" value="deporte"> Deporte
+      <input type="checkbox" name="intereses[]" value="musica"> Música
+      <input type="checkbox" name="intereses[]" value="lectura"> Lectura
+
+    </fieldset>
+
+    <input type="submit" value="Enviar">
+
+  </form>
+
+</body>
+</html>
